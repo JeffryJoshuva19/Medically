@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/templates/static/js/profilepost.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/templates/static/css/profile.css" rel="stylesheet">
+    <link rel="stylesheet" href="templates/static/css/edit_profile.css">
+  </head>
+  
+
+<body>
+
+
+    <!--  project header top most -->
+    <div class="custom-header ">
+      <div class="logo col">
+        <img src="/templates/static/images/fire-cracker.png" alt="Logo">
+      </div>
+      <div class="search-bar col">
+        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search..." >
+      </div>
+      <div class="user-info">
+        <img src="/templates/static/UploadFiles/{{user_datas.Thumb_IMG}}" alt="User Image">
+        <div class="user-name">{{user_datas.Username}}</div>
+      </div>
+      <div class="d-flex justify-content-evenly g-2 col">
+        <img src="/templates/static/images/home (1).png" height="30" width="30" alt="">
+        <img src="/templates/static/images/message (1).png" height="30" width="30" alt="">
+        <img src="/templates/static/images/notification.png" height="30" width="30" alt="">
+        <img src="/templates/static/images/plus.png" height="30" width="30" alt="">
+        <img src="/templates/static/images/grid-lines.png" height="30" width="30" alt="">
+      </div>
+    </div>
+
+  <!--end of top most header-->
+   <!-- <div class="custom-header1">
+      <div class="d-flex justify-content-evenly">
+
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <div>
+          <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+          <div class="star-rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!--nav bar for header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <a class="navbar-brand" href="#"><img src="/templates/static/images/menu.png" alt="menu" height="30" width="30"></a>
+        
+      </button>
+      <div class="collapse navbar-collapse navhead" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item ">
+            <a class="nav-link image" id="imgtxt"  href="#"><img src="/templates/static/images/circle (1).png" onclick="showtxt()" id="showtxext" height="30" width="30" alt="">New text</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/circle"><img src="/templates/static/images/multiple-users-silhouette.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/comments.html"><img src="/templates/static/images/video.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/templates/static/images/two-books.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/templates/static/images/blog-removebg-preview.png" height="40" width="40" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/profilepost.html"><img src="/templates/static/images/user-black-close-up-shape.png" height="30" width="30" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right-content">
+        <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+        <div class="star-rating">
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-half" style="color:#2FCACA"></i>
+        </div>
+      </div>
+    </nav>
+    <!--end of the navbar-->
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-4 col-12" style="background-color: white;">         
+           <div style="width:100%; margin-top: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            
+            <fieldset class="bodyf2">
+              <h5 style="font-size:18px;margin:7px;"><b>Research publications</b></h5>
+              {% for i in research%}
+              <div class="bodyright">
+                <img src="/templates/static/images/goodedu.png" height="90px" width="90px">
+                <div>
+                <a href="{{i.link}}" style="color:black;" target="_blank"><p class="pf1">{{i.text}}</p></a>
+                <p style="margin-right:3px;margin-top:-9px;color: rgba(128,128,128,0.8);font-size:12px;"><img src="/templates/static/images/bell (1).png" height="18" width="18" alt="">Notifications<button style="background:white;border:1px solid red; color:red;margin-left:5px">3</button></p>
+                
+              </div>
+              </div>
+              {% endfor %}
+            </fieldset>
+            
+          </div>
+          <div style="width: 100%; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="main-container">
+              <!-- Set a fixed width and center the container -->
+                <h5 class="research"><b>Suggested circle</b></h5>
+                    <div class="inner-card card" style="width: 100; position: relative;padding:10px background-color:white;">
+                        <img class="card-img-top" src="/templates/static/images/suggested.jpg" alt="Card image cap" style="width: 100%;height: 100px;">
+                        <div class="rounded-image" style="position: absolute; width: 60px; height: 60px; left: 20px; top: 70px;">
+                            <img src="/templates/static/images/profile3.jpg" alt="Round Image" style="width: 100%; height: 100%; border-radius: 50%;">
+                        </div>
+                        <div class="Suggested2" style="text-align:right;margin-top:30px;margin-right:5px;">
+                          <p>Infectious disease groups</p>
+                        </div>
+                        <div class="suggested3" style="margin-top:-15px;margin-left:45px;margin-right:5px;font-size:14px;">
+                          <p>@diseasegroup</p>
+                        </div>
+                        <div class="bu1">
+                        <button class="button3">Join Circle</button>
+                        </div>
+                        <!--<div class="disease-group">
+                            @diseasegroup
+                        </div>
+                        <div class="infectious-disease-group">
+                            Infectious disease Group
+                        </div>-->
+                    </div>
+                
+            
+        </div>
+        
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="Explore">
+          <h5 class="research" style="margin-left:0%;"><b>Explore Events</b></h5>
+          
+          <div class="box">
+            <img src="/templates/static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+          <div class="box1">
+            <img src="/templates/static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          {%for i in infect %}
+          <div class="infect">
+            <img src="/templates/static/images/{{i.image}}" width="111%" height="180px" alt="Infect Image">
+            <p style="margin-top:14px;">{{i.text}}</p>
+          </div>
+            <div class="overlay">
+                
+                <div class="price">
+                    <b><p style="margin-right:3.5%;">{{i.price}}</p></b>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h4 style="font-size:18px"><b>Circle Terms</b></h4>
+
+        <div class="terms-list">
+          {% for i in menus %}
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>            
+              <span class="term-name">{{i.Menuname}}</span>
+            </div>
+          {% endfor %}
+           
+
+            <div class="term-item">
+              <span class="term-name" style="text-align:center;font-size:10px;margin-bottom:8px; margin-left:12%;"><b>© Medically 2020.All rights reserved</b></span>
+            </div>
+            
+        </div>
+        </div>
+        <div class="custom-container p-3 rounded" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);margin-top:15px;">
+          <h6 class="research1" style="white-space: nowrap;text-align:center;"><b>Ask Research Question ?</b></h6>
+          <div class="term-item" style="text-align: center;">
+              <span class="reply-icon1"><img src="/templates/static/images/i.png" height="25" width="25" alt=""></span>
+              <span class="term-name" style="display: block;font-size:13px;text-align:justify">Ask questions in QA to get help from experts in your field</span>
+          </div>
+          <button type="button" class="btn btn-dark button3 mt-3" style="display: block; margin: 0 auto;">Ask a question</button>
+      </div>
+      
+
+        </div>
+  
+        <div class="col-lg-8 col-12" style="background-color: white; position: relative;">
+          <div style="width: 100%; height: 300px; margin-top: 15px; position: relative;">
+            <img src="/templates/static/UploadFiles/{{user_datas.Cover_IMG}}" alt="User Image" class="img-fluid" style="border-radius: 8px; width: 100%; height: 100%;">
+            <!-- Small circular image at the bottom left -->
+            <img src="/templates/static/UploadFiles/{{user_datas.Thumb_IMG}}" alt="Small Circle Image" style="position: absolute; left: 30px; bottom: 10px; width: 110px; height: 110px; border-radius: 50%; margin: 10px;border:5px solid white">
+          </div>
+          <div class="d-flex flex-row align-items-center mt-3 post2">
+            <div class="user1">
+                <p class="post3" style="font-weight: bold; margin-bottom: 0; text-align:start;">{{user_datas.Name}}</p>
+                {% if user_datas.Occupation == "Doctor" and user_datas.verify=="Verified"%}
+                <img src="/templates/static/images/verified.png" height="25px" width="25px" style="margin-left:10px;margin-top:8px;" alt="" class="verified-img">
+                {% endif %}
+            </div>
+            <div class="d-flex justify-content-end align-items-center flex-grow-1 mt-3">
+              
+                <div class="d-flex flex-row justify-content-evenly gap-3 align-items-end post2">
+                    <p class="mb-0"><b>Joined:</b> <span class="text-primary-emphasis">{{user_datas.Created_at}}</span></p>
+                    <p class="mb-0"><b>Followers:</b> 100</p>
+                    <p class="mb-0"><b>Following:</b> 50</p>
+                    <p class="mb-0"><b>Posts:</b>{{c}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+          <p class="post4" style="color: #2FCACA; margin-top: -5px;font-size:17px;">@{{user_datas.Username}}</p>
+      </div>
+          <div class="d-flex justify-content mt-3">
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToProfileabout()">Posts</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToAnotherPage()">About</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;">Edit</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" data-bs-toggle="modal" data-bs-target="#addModal">AddInfo</button>
+            
+          </div>
+          <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+            <div style="display:flex;">
+              <div style="width: 70%;padding-top: 5px; padding-left:20px;">
+                <h4 style="margin-left:-1.5%;">About Me!</h4>
+                <p>{{user_datas.Aboutus}}</p>
+              </div>
+              <div class="social" style="width: 30%; padding-right: 20px;  margin-left:5%;">
+                <h5 style="margin-top:5.5%;">Share Profile</h5>
+                <div class="d-flex justify-content g-2 col social1">
+                    <img src="/templates/static/images/facebook1.png" height="30" width="30" alt="" class="img-spacing">
+                    <img src="/templates/static/images/insta.png" height="30" width="30" alt="" class="img-spacing">
+                    <img src="/templates/static/images/google.png" height="30" width="30" alt="" class="img-spacing">
+                </div>
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content g-2 col" style="padding-left: 15px;margin-right: 20px;margin-left: 5px;margin-top:33px">
+              <img src="/templates/static/images/image1.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image2.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image3.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image4.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image5.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image6.png" height="56" width="50" alt="" class="img-spacing">
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+          <div class="col-md-8 col-12" style="background-color: white; height: 60%;">
+            {% if user_datas.Occupation == "Doctor" and user_datas.verify=="Verified"%}
+            <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+              <h4>Create a new circle</h4>
+
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="search-bar1 search">
+                        <div class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M9.75 20.85c1.78-.7 1.39-2.63.49-3.85c-.89-1.25-2.12-2.11-3.36-2.94A9.817 9.817 0 0 1 4.54 12c-.28-.33-.85-.94-.27-1.06c.59-.12 1.61.46 2.13.68c.91.38 1.81.82 2.65 1.34l1.01-1.7C8.5 10.23 6.5 9.32 4.64 9.05c-1.06-.16-2.18.06-2.54 1.21c-.32.99.19 1.99.77 2.77c1.37 1.83 3.5 2.71 5.09 4.29c.34.33.75.72.95 1.18c.21.44.16.47-.31.47c-1.24 0-2.79-.97-3.8-1.61l-1.01 1.7c1.53.94 4.09 2.41 5.96 1.79m9.21-13.52L13.29 13H11v-2.29l5.67-5.68zm3.4-.78c-.01.3-.32.61-.64.92L19.2 10l-.87-.87l2.6-2.59l-.59-.59l-.67.67l-2.29-2.29l2.15-2.15c.24-.24.63-.24.86 0l1.43 1.43c.24.22.24.62 0 .86c-.21.21-.41.41-.41.61c-.02.2.18.42.38.59c.29.3.58.58.57.88"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control" placeholder="          Search..." data-toggle="modal" data-target="#createCircleModal">
+                    </div>
+                </div>
+            </div>
+          
+              <div class="post-icon">
+                  <a href="#" class="btn btn-light" style="background: #ffebed;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 48 48"><path fill="#e65100" d="M41 42H13c-2.2 0-4-1.8-4-4V18c0-2.2 1.8-4 4-4h28c2.2 0 4 1.8 4 4v20c0 2.2-1.8 4-4 4"/><path fill="#f57c00" d="M35 36H7c-2.2 0-4-1.8-4-4V12c0-2.2 1.8-4 4-4h28c2.2 0 4 1.8 4 4v20c0 2.2-1.8 4-4 4"/><circle cx="30" cy="16" r="3" fill="#fff9c4"/><path fill="#942a09" d="M17 17.9L8 31h18z"/><path fill="#bf360c" d="M28 23.5L22 31h12z"/></svg>
+                      Photo/Video
+                  </a>
+          
+                  
+          
+                  <a href="#" class="btn btn-light" style="background: #fff4d1;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="#ffcc4d"/><path fill="#664500" d="M10.515 23.621C10.56 23.8 11.683 28 18 28c6.318 0 7.44-4.2 7.485-4.379a.499.499 0 0 0-.237-.554a.505.505 0 0 0-.6.077C24.629 23.163 22.694 25 18 25s-6.63-1.837-6.648-1.855a.502.502 0 0 0-.598-.081a.5.5 0 0 0-.239.557"/><ellipse cx="12" cy="13.5" fill="#664500" rx="2.5" ry="3.5"/><ellipse cx="24" cy="13.5" fill="#664500" rx="2.5" ry="3.5"/></svg>
+                    Feeling/Activity
+                  </a>
+              </div>
+          </div>
+          {% endif %}
+          <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+            {% for posts in posts%}
+            
+            <div class="fb-post1" id="fb-post{{loop.index}}">
+
+                <div class="fb-post1-container">
+                  
+                    <div class="fb-p1-main">
+                        <div class="post-title">
+                            <img src="/templates/static/UploadFiles/{{user_datas.Thumb_IMG}}" alt="user picture">
+                            <ul>
+                                <li><h4 style="margin-bottom: 4px;">{{posts.Username}}<span>2 hours ago</span></h4></li>
+                                <li><span style="font-size: 12px;">02 march at 12:55 PM</span></li>
+                            </ul>
+                        </div>
+                        <div class="post-images">
+                            <div class="post-images1">
+                                <img src="/templates/static/UploadFiles/{{posts.Postimage}}" alt="post images 01" class="postimg" >
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>{{posts.Posttitle}}</h3>
+                            <p style="font-size:16px;">{{posts.Postdescription}}</p>
+                        </div>
+                        <div class="post-icons1"> 
+                            <div>
+                                <span class="comment-count">{{ posts.comment_count }}</span>
+                                <img src="/templates/static/images/eye.png" height="30" width="30" alt="" class="img-spacing">
+                                <span class="comment-count">{{ posts.comment_count }}</span>
+                                <img src="/templates/static/images/message (2).png" height="25" width="25" alt="" class="img-spacing">
+                                <span class="comment-count">{{ posts.comment_count }}</span>
+                                <img src="/templates/static/images/star.png" height="25" width="25" alt="" class="img-spacing">
+                                <span class="comment-count">{{ posts.comment_count }}</span>
+                                <img src="/templates/static/images/share.png" height="20" width="20" alt="" class="img-spacing">
+                            </div>
+                            <div class="reply-icon">
+                                <img src="/templates/static/images/reply.png" height="20" width="20" alt="" class="img-spacing">
+                            </div>
+                        </div>
+                        <div class="like-comment">
+                            <ul>
+                                <li>
+                                    <button id="likeButton{{loop.index}}" onclick="toggleLike({{loop.index}})">
+                                      <i class="far fa-thumbs-up"></i>                                        <span>Like</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="commentButton" onclick="toggleCommentSection({{loop.index}})">
+                                        <i class="far fa-comment-dots" ></i>
+                                        <span>Comment</span>
+                                    </button>
+                                </li>
+                                <li>
+                                  <button class="shareButton" onclick="sharePost('/templates/static/UploadFiles/{{ posts.Postimage|escape }}', '{{ posts.Postdescription|escape }}','{{ posts.Posttitle|escape }}')">
+                                    <i class="fas fa-share-alt"></i>
+                                    <span>Share</span>
+                                </button>
+                                </li>
+                            </ul>
+                            <div class="emoji-selection">
+                                <!-- Add your emoji selection options here -->
+                                <button><img src="/templates/static/images/cool.png" height="30" width="30" alt="" class="img-spacing"></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="search-bar1 search" style="position: relative; display: none;" id="commentSection{{loop.index}}">
+                          <form>
+                              <input type="hidden" id="postid{{loop.index}}" name="postid{{loop.index}}" value="{{posts.Postid}}" class="form-control">
+                              <input type="text" class="form-control" id="inputcomment{{loop.index}}" name="inputcomment{{loop.index}}" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Write comment" style="margin-left: 10px; border: 1px solid black; margin-top: 20px; padding: 20px;">
+                              <img src="/templates/static/images/telegram.png" height="20" width="20" alt="post" style="position: absolute; right: 65px; top: 40px;" onclick="Post({{loop.index}})">
+                          </form>
+                      </div>
+                      
+                        <div class="fb-post1" style="display: none;" id="comments{{loop.index}}">
+                          
+                            <div class="fb-post1-container">
+                              
+                                
+                                <div class="fb-p1-main">
+                                  {%for i in posts.comment%}
+                                  {%if i.Postid==posts.Postid%}
+                                    <div class="post-title">
+                                      
+                                          <img src="/templates/static/UploadFiles/{{user_datas.Thumb_IMG}}" alt="user picture">
+                                        
+                                      
+                                        <ul>
+                                            <li><h5 style="margin-bottom:4px;">{{i.Username}} <span style="font-size:12px;">2 hours ago</span></h5></li>
+                                            <p style="font-size:16px;">{{i.Comments}}</p>
+                                            <div class="reply-icons">
+                                              <i class="fas fa-reply" onclick="toggleCommentBox(this)" style="color:#2FCACA;"></i>
+                                              <i class="fa-regular fa-heart" style="color:#2FCACA;"></i>                                          </div>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                    
+                                    {%endif%}
+                                    {%endfor%}
+                                </div>
+                                
+                              
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+          
+            {% endfor %}
+          
+        </div>
+        
+        <button type="button"  id="load-more-button" class="btn btn-dark button2">Load More...</button>
+          </div>
+          <div class="col-md-4 col-12" style="height: 40%;">
+            <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <img src="/templates/static/UploadFiles/{{ad.image}}" alt="Advertisement" style="width: 100%; height: 250px;">
+            </div>
+            <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <div class="messenger">
+                <h4>Follow People</h4>
+                
+                <ul>
+                  {% for otheruser in otheruser%}
+                    <li>
+                        <img src="/templates/static/UploadFiles/{{otheruser.Thumb_IMG}}" alt="user">
+                        <b>{{otheruser.Username}}<span style="font-size:12px;">{{otheruser.Position}}</span></b>
+                    <div class="follow">
+                        <p>follow</p>
+                    </div>
+                    </li>
+                    {% endfor %}
+
+                    
+                </ul>
+            </div>
+
+            
+            </div>
+            <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <div class="messenger">
+                <h4>You may like groups</h4>
+               
+                <ul>
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">
+                        <b>Jeffry Joshuva<span>Dept Colleague</span></b>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </li>
+
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">   
+                        <b>Saranraj<span>Dept Colleague</span></b>
+                        <i class="fas fa-thumbs-up"></i>
+                      </li>
+
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">
+                        <b>Yogaraj<span>Dept Colleague</span></b>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+      
+<div class="footer1">
+  <img src="/templates/static/images/footer.png" width="100%"  alt="Your Image Description">
+
+</div>
+    <div class="d-flex">
+      
+      <footer class="text-center py-3" style="background-color: #2FCACA; color: white; margin-top: 20px; width: 100%;">
+          <p>&copy; All rights reserved by CoderzBot</p>
+      </footer>
+  </div>
+
+ <!-- Modal -->
+<div class="modal fade" id="createCircleModal" tabindex="-1" role="dialog" aria-labelledby="createCircleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createCircleModalLabel">Create New Circle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row mt-3">
+      <!-- Left Section -->
+      <div class="col-md-6 col-12">
+       
+
+        <!-- Buttons for Left Section -->
+<div class="row">
+  <div class="col-md-6">
+    <label for="imageInput" class="btn btn-circle">Photos</label>
+    <input type="file" id="imageInput" name="imageInput" style="display: none;">
+</div>
+  <div class="col-md-6">
+      <button type="button" class="btn btn-circle">Videos</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+      <button type="button" class="btn btn-circle">Location</button>
+  </div>
+  <div class="col-md-6">
+      <button type="button" class="btn btn-circle">Posts</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    
+      <button type="button" class="btn btn-circle">Post Gift</button>
+  </div>
+  <div class="col-md-6">
+      <button type="button" class="btn btn-circle">Location</button>
+  </div>
+</div>
+
+        <!-- File Drop Zone -->
+        <div class="file-drop-zone" id="fileDropZone">
+          Drop files here to upload
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="col-md-6 col-12">
+        <!-- Comment Box -->
+        <textarea class="form-control comment-box" placeholder="Write your comment..." id="name1" name="name1"></textarea>
+
+        <!-- Schedule Circle Buttons -->
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-circle btn-schedule">Schedule Circle</button>
+          <button type="button" class="btn btn-circle btn-schedule">Schedule Circle 2</button>
+        </div>
+
+        <!-- Share Link Section -->
+        <div class="share-link">
+          <textarea class="form-control" placeholder="Enter your link..."></textarea>
+        </div>
+
+        <!-- Create Circle Button -->
+        <button type="button" class="btn btn-primary btn-circle1" onclick="circle()">Create Circle</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel" >UserDetails</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form" onsubmit="return validateForm()">
+                  <div class="form-element">
+                    <label for="date-of-birth"><span></span>Date of Birth:</label>
+                    <input type="date" id="date-of-birth" name="date-of-birth" required>
+                </div>
+                    
+                    
+                {% if user_datas.Occupation == "Doctor" %}
+                    <div class="form-element">
+                      <label for="current-position">Current Position<span></span></label>
+                      <select id="current-position" class="form-select" name="current-position" required>
+                          <option value="">-Please Select-</option>
+                          <option value="Doctor">Doctor</option>
+                          <option value="Surgeon">Surgeon</option>
+                          <option value="General Practitioner">General Practitioner</option>
+                          <option value="Pediatrician">Pediatrician</option>
+                          <option value="Cardiologist">Cardiologist</option>
+                          <option value="Neurologist">Neurologist</option>
+                          <option value="Oncologist">Oncologist</option>
+                          <option value="Dermatologist">Dermatologist</option>
+                          <option value="Endocrinologist">Endocrinologist</option>
+                          <option value="Gastroenterologist">Gastroenterologist</option>
+                          <option value="Hematologist">Hematologist</option>
+                          <option value="Nephrologist">Nephrologist</option>
+                          <option value="Pulmonologist">Pulmonologist</option>
+                          <option value="Rheumatologist">Rheumatologist</option>
+                          <option value="Urologist">Urologist</option>
+                          <option value="Ophthalmologist">Ophthalmologist</option>
+                          <option value="Psychiatrist">Psychiatrist</option>
+                          <option value="Radiologist">Radiologist</option>
+                          <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                      </select>
+                  </div>
+                    <div class="form-element">
+                        <label for="industry">Website<span></span></label>
+                        <input type="text" id="website" name="website" placeholder="Enter Industry" required>
+                    </div>
+                    {% endif %}
+                    <div class="form-element">
+                        <label for="location">Location<span></span></label>
+                        <input type="text" id="location" name="location" placeholder="Enter Location" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="city">City<span></span></label>
+                        <input type="text" id="city" name="city" placeholder="Enter City" required>
+                    </div>
+                    <!-- Cover Image -->
+                    <div class="form-element">
+                      <label for="cover-image">Cover Image<span></span></label>
+                      <input type="file" id="cover-image" name="cover-image" accept="image/*" required>
+                    </div>
+
+                    <!-- Profile Image -->
+                    <div class="form-element">
+                      <label for="profile-image">Profile Image<span></span></label>
+                      <input type="file" id="profile-image" name="profile-image" accept="image/*" required>
+                    </div>
+
+                    <!-- About Me -->
+                    <div class="form-element">
+                      <label for="about-me">About Me<span>*</span></label>
+                      <textarea id="about-me" name="about-me" placeholder="Tell us about yourself..." required></textarea>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="form-element">
+                      <label for="interests">Interests<span>*</span></label>
+                      <input type="text" id="interests" name="interests" placeholder="Enter your interests" required>
+                    </div>
+                                        
+                    <button type="button" class="save-btn mt-4" onclick="personaldetails()">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Bootstrap JS and Font Awesome CDN links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+
+  function Post(id){
+    let formData =new FormData();
+    formData.append("postid",document.getElementById("postid"+id).value);
+    formData.append("inputcomment",document.getElementById("inputcomment"+id).value);
+  
+    $.ajax({
+      type: "POST",
+      url: "/comments",
+      data: formData,
+      encode: true,
+      dataType: 'json',
+      processData: false,
+      contentType: false,
+
+    }).done(function(response){
+      if(response=="Done"){
+    
+        window.location.href="/profilepost";
+  
+          
+      }
+      else{
+        alert(response);
+      }     
+
+    });
+  }
+  function circle() {
+    alert("hello");
+    
+    // Create FormData object
+    let formData = new FormData();
+    formData.append("name1", $("#name1").val());
+    formData.append("imageInput", $("#imageInput")[0].files[0]);
+
+    // Send AJAX request
+    $.ajax({
+        type: "POST",
+        url: "/circle",
+        data: formData,
+        // Remove the 'encode' option
+        dataType: 'json',
+        processData: false,
+        contentType: false,
+    }).done(function(response) {
+        if (response == "Done") {
+            window.location.href = "/profilepost";
+        } else {
+            alert(response);
+        }
+    });
+}
+
+
+  function personaldetails() {
+
+    var formData = new FormData();
+    formData.append("dob", $("#date-of-birth").val());
+    formData.append("location", $("#location").val());
+    formData.append("city", $("#city").val());
+    formData.append("aboutme", $("#about-me").val());
+    formData.append("interests", $("#interests").val());
+    formData.append("coverimage", $("#cover-image")[0].files[0]);
+    formData.append("profile", $("#profile-image")[0].files[0]);
+    formData.append("currentposition", $("#current-position").val());
+    formData.append("website",$("#website").val());
+
+
+    $.ajax({
+        type: "post",
+        url: "/details1",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            if (response === "Done") {
+                window.location.href="/profilepost";
+            }
+        }
+    });
+
+}
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loadMoreButton = document.getElementById("load-more-button");
+      var visiblePosts = 3; 
+      var totalPosts = {{ posts|length }}; 
+    
+      // Function to show additional posts
+      function showMorePosts() {
+        for (var i = visiblePosts; i <= Math.min(visiblePosts + 3, totalPosts); i++) {
+          var post = document.getElementById("fb-post" + i);
+          if (post) {
+            post.style.display = "block";
+          }
+        }
+        visiblePosts += 3; // Update the count of visible posts
+    
+        // Hide the "Load More" button if all posts are visible
+        if (visiblePosts >= totalPosts) {
+          loadMoreButton.style.display = "none";
+        }
+      }
+    
+      // Initially hide all posts except the first three
+      for (var i = visiblePosts; i < totalPosts; i++) {
+        var post = document.getElementById("fb-post" + i);
+        if (post) {
+          post.style.display = "none";
+        }
+      }
+    
+      // Event listener for the "Load More" button
+      loadMoreButton.addEventListener("click", function() {
+        showMorePosts();
+      });
+    });
+
+    function toggleLike(index) {
+      var likeButton = document.getElementById('likeButton' + index);
+      
+      // Check if the button element is found
+      if (likeButton) {
+          var icon = likeButton.querySelector('i');
+          
+          // Toggle between thumbs-up and thumbs-down icons
+          if (icon.classList.contains('far')) {
+              icon.classList.remove('far');
+              icon.classList.add('fas'); // Change to solid thumbs-up icon
+          } else {
+              icon.classList.remove('fas');
+              icon.classList.add('far'); // Change to regular thumbs-up icon
+          }
+      } else {
+          console.error("Button element not found with ID 'likeButton" + index + "'");
+      }
+  }
+
+  /*share api for posts in the page*/
+  function sharePost(imageUrl, description,title) {
+    // Compose the email body with post image URL and description
+    var body = encodeURIComponent('Check out this post:\n\n'+ 'Title: '+ title+'\n\n'+'Description: '+ description + '\n\n' + 'Image: ' + imageUrl);
+
+    // Construct the mailto link
+    var mailtoLink = 'mailto:?body=' + body;
+
+    // Open the default email client with the pre-filled email
+    window.location.href = mailtoLink;
+}
+
+
+
+
+  
+    
+</script>
+
+
+</html>

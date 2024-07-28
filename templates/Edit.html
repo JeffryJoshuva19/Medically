@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/edit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/static/js/profilepost.js"></script>
+    <link rel="stylesheet" href="/static/css/edit_profile.css">  
+     
+
+
+
+    
+ 
+</head>
+
+<body>
+
+  <div class="container">
+    <!--  project header top most -->
+    <div class="custom-header ">
+      <div class="logo col">
+        <img src="/static/images/fire-cracker.png" alt="Logo">
+      </div>
+      <div class="search-bar col">
+        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search..." >
+      </div>
+      <div class="user-info">
+        <img src="/static/images/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="User Image">
+        <div class="user-name">George</div>
+      </div>
+      <div class="d-flex justify-content-evenly g-2 col">
+        <a class="navbar-brand" href="/templates/home_page.html"><img src="/static/images/home (1).png" height="30" width="30" alt=""></a>
+        <img src="/static/images/message (1).png" height="30" width="30" alt="">
+        <img src="/static/images/notification.png" height="30" width="30" alt="">
+        <img src="/static/images/plus.png" height="30" width="30" alt="">
+        <img src="/static/images/grid-lines.png" height="30" width="30" alt="">
+      </div>
+    </div>
+  <!--end of top most header-->
+   <!-- <div class="custom-header1">
+      <div class="d-flex justify-content-evenly">
+
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <div>
+          <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+          <div class="star-rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!--nav bar for header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="/static/images/menu.png" alt="menu" height="30" width="30"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navhead" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link image" id="imgtxt"  href="#"><img src="/static/images/circle (1).png" onclick="showtxt()" id="showtxext" height="30" width="30" alt="">New text</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/circle.html"><img src="/static/images/multiple-users-silhouette.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/comments.html"><img src="/static/images/video.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/static/images/two-books.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/static/images/circle (1).png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/profilepost.html"><img src="/static/images/user-black-close-up-shape.png" height="30" width="30" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+        <div class="star-rating">
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-half" style="color:#2FCACA"></i>
+        </div>
+    </nav>
+    <!--end of the navbar-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="background-color: white; width: 25%;">
+          <div style="width:100%; height:300px; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <h5 class="research">Research Publications</h5>
+            <div class="flex">
+              <img src="/static/images/A_small_cup_of_coffee.JPG" alt="cup" class="imgSide">
+              <div class="block">
+                <h6>Alzheimer's disease - paths </h6>
+              </div>
+            </div>
+          </div>
+        <div style="width:100%; height: 300px; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="Explore">
+          <h5 class="research">Explore Events</h5>
+          <br>
+          <br>
+          <div class="box">
+            <p>hello everyone</p>
+
+          </div>
+          <section class="box">
+            <p>hello everyone</p>
+
+          </section>
+        </div>
+        <div style="width:100%; height:300px; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          
+        </div>
+        <div style="width: 100%; height: 300px; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <div style="height: 30px; margin-top: 25px;">
+                <img src="/static/images/avatar.jpg" alt="Doctors Image">
+            </div>
+            <div style="margin-bottom: 300px; padding: 0 10px;">
+                <p style="margin: 25;">Infectious disease past versus present</p>
+            </div>
+        </div>
+        
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h5 class="research">Ask Research question?</h5>
+          <img src="/static/images/add.png" height="30" width="30" alt="">
+            <p style="padding-right:10px;padding-left:10px;align-items:inline">ask your questions in qand a so that you czn get clear idea from the experts</p>
+          <button type="button" class="btn btn-dark button3">Ask a question</button>
+          
+        </div>
+
+        </div>
+  
+        <div class="col-md-4" style="background-color: white; width: 75%; position: relative;">
+          <div style="width: 100%; height: 400px; margin-top: 15px; position: relative;">
+            <img src="/static/images/background.jpg" alt="User Image" class="img-fluid" style="border-radius: 8px; width: 100%; height: 100%;">
+            <!-- Small circular image at the bottom left -->
+            <img src="/static/images/image.jpg" style="position: absolute; left: 30px; bottom: 0; width: 110px; height: 110px; border-radius: 50%; margin: 8px;">
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+              <p style="margin-right: 10px;font-size: 30px;font-weight: bold;">George peter</p>
+              <p style="font-size: 20px; color: #2FCACA;margin-top: 0px;">@georgepeter123</p>
+              
+            </div>
+            <div class="le">
+              <p>Joined: January 2022</p>
+              <p>Followers: 100</p>
+              <p>Following: 50</p>
+              <p>Posts: 20</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content mt-3">
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToProfileabout()">Posts</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToAnotherPage()">About</button>
+            <button type="button" class="btn btn-dark button1" data-bs-toggle="modal"
+            data-bs-target="#editModal">Edit</button>            
+          </div>
+          <div style="width: 100%; height: 407px; margin-top: 15px; position: relative; border: 1px solid white; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); display: flex; flex-direction: column;">
+            <h3 style="margin-left: 6px; padding:10px;">Suggest for you</h3>
+            <div style="width: 100%; display: flex;">
+                <div style="width: 50%; height: 200px; margin-top: 65px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); flex: 1;" class="Explore">
+                    
+                    <div style="margin-top: 25px">
+                        <img src="/static/images/camera.png" alt="Camera Icon" class="logo">
+                        <div class="text-container">
+                            <p>Add a profile photo to help others recognize you</p>
+                            <button class="rectangle-1">ADD PHOTO</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 50%; height: 200px; margin-top: 65px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); flex: 1; margin-left: 15px;" class="Explore">
+                    <div style="margin-top: 25px">
+                        <img src="/static/images/building.png" alt="Building Icon" class="logo">
+                        <div class="text-container">
+                            <p>Which university or school did you attend?</p>
+                            <button class="rectangle-2">ADD EDUCATION</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social" style="text-align: right; padding-right: 20px;">
+                
+            </div>
+        </div>
+        
+             <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="editModalLabel" >Edit Intro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form class="form" onsubmit="return validateForm()">
+                      <div class="form-element">
+                          <label for="first-name">First Name<span>*</span></label>
+                          <input type="text" id="first-name" name="first_name" placeholder="Enter First Name" required>
+                      </div>
+                      <div class="form-element">
+                          <label for="last-name">Last Name<span>*</span></label>
+                          <input type="text" id="last-name" name="last_name" placeholder="Enter Last Name" required>
+                      </div>
+                      <div class="form-element">
+                          <label for="pronouns">Pronouns<span>*</span></label>
+                          <select id="pronouns" class="form-select" name="pronouns" required>
+                              <option value="">-Please Select-</option>
+                              <option value="he/him">He/Him</option>
+                              <option value="she/her">She/Her</option>
+                              <option value="they/them">They/Them</option>
+                          </select>
+                      </div>
+                      <div class="form-element">
+                          <label for="current-position">Current Position<span>*</span></label>
+                          <select id="current-position" class="form-select" name="current-position" required>
+                              <option value="">-Please Select-</option>
+                              <option value="Doctor">Doctor</option>
+                              <option value="Surgeon">Surgeon</option>
+                              <option value="General Practitioner">General Practitioner</option>
+                              <option value="Pediatrician">Pediatrician</option>
+                              <option value="Cardiologist">Cardiologist</option>
+                              <option value="Neurologist">Neurologist</option>
+                              <option value="Oncologist">Oncologist</option>
+                              <option value="Dermatologist">Dermatologist</option>
+                              <option value="Endocrinologist">Endocrinologist</option>
+                              <option value="Gastroenterologist">Gastroenterologist</option>
+                              <option value="Hematologist">Hematologist</option>
+                              <option value="Nephrologist">Nephrologist</option>
+                              <option value="Pulmonologist">Pulmonologist</option>
+                              <option value="Rheumatologist">Rheumatologist</option>
+                              <option value="Urologist">Urologist</option>
+                              <option value="Ophthalmologist">Ophthalmologist</option>
+                              <option value="Psychiatrist">Psychiatrist</option>
+                              <option value="Radiologist">Radiologist</option>
+                              <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                          </select>
+                          <a href="add.html" class="edit-link">+ Add New Position</a>
+                      </div>
+                      <div class="form-element">
+                          <label for="industry">Industry<span>*</span></label>
+                          <input type="text" id="industry" name="industry" placeholder="Enter Industry" required>
+                      </div>
+                      <div class="form-element">
+                          <label for="location">Location<span>*</span></label>
+                          <input type="text" id="location" name="location" placeholder="Enter Location" required>
+                      </div>
+                      <div class="form-element">
+                          <label for="city">City<span>*</span></label>
+                          <input type="text" id="city" name="city" placeholder="Enter City" required>
+                      </div>
+                      <h6 class="mt-4">Contact info</h6>
+                      <p>Add or edit your profile URL, email, and more</p>
+                      <div class="edit-contact-info">
+                          <a href="/templates/info.html" class="edit-link">Edit Contact Info</a>
+                      </div>
+                      <button type="submit" class="save-btn mt-4">Save</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+           
+      
+    </div>
+    <div class="d-flex">
+    <footer class="text-center py-3" style="background-color: #2FCACA; color: white; margin-top: 420px; width: 100%;">
+      <p>&copy; All rights reserved by CoderzBot</p>
+    </footer>
+  </div>
+  
+
+
+  <!-- Bootstrap JS and Font Awesome CDN links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+
+  
+</body>
+
+</html>

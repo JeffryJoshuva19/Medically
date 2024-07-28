@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/templates/static/js/profilepost.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/templates/static/css/profileabout.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-..."></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+ 
+</head>
+
+<body>
+
+
+    <!--  project header top most -->
+    <div class="custom-header ">
+      <div class="logo col">
+        <img src="/templates/static/images/fire-cracker.png" alt="Logo">
+      </div>
+      <div class="search-bar col">
+        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search..." >
+      </div>
+      <div class="user-info">
+        <img src="/templates/static/UploadFiles/{{user_data.Thumb_IMG}}" alt="User Image">
+        <div class="user-name">{{user_data.Username}}</div>
+      </div>
+      <div class="d-flex justify-content-evenly g-2 col">
+        <img src="/templates/static/images/home (1).png" height="30" width="30" alt="">
+        <img src="/templates/static/images/message (1).png" height="30" width="30" alt="">
+        <img src="/templates/static/images/notification.png" height="30" width="30" alt="">
+        <img src="/templates/static/images/plus.png" height="30" width="30" alt="">
+        <img src="/templates/static/images/grid-lines.png" height="30" width="30" alt="">
+      </div>
+    </div>
+  <!--end of top most header-->
+   <!-- <div class="custom-header1">
+      <div class="d-flex justify-content-evenly">
+
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <div>
+          <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+          <div class="star-rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!--nav bar for header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <a class="navbar-brand" href="#"><img src="/templates/static/images/menu.png" alt="menu" height="30" width="30"></a>
+        
+      </button>
+      <div class="collapse navbar-collapse navhead" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item ">
+            <a class="nav-link image" id="imgtxt"  href="#"><img src="/templates/static/images/circle (1).png" onclick="showtxt()" id="showtxext" height="30" width="30" alt="">New text</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/circle.html"><img src="/templates/static/images/multiple-users-silhouette.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/comments.html"><img src="/templates/static/images/video.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/templates/static/images/two-books.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/templates/static/images/blog-removebg-preview.png" height="40" width="40" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/profilepost.html"><img src="/templates/static/images/user-black-close-up-shape.png" height="30" width="30" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right-content">
+        <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+        <div class="star-rating">
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-half" style="color:#2FCACA"></i>
+        </div>
+      </div>
+    </nav>
+    <!--end of the navbar-->
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-4 col-12" style="background-color: white;">         
+           <div style="width:100%; margin-top: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <fieldset class="bodyf2">
+              <h5 style="font-size:18px;margin:7px;"><b>Research publications</b></h5>
+              {% for i in research%}
+              <div class="bodyright">
+                <img src="/templates/static/images/goodedu.png" height="90px" width="90px">
+                <div>
+                <a href="{{i.link}}" style="color:black;" target="_blank"><p class="pf1">{{i.text}}</p></a>
+                <p style="margin-right:3px;margin-top:-9px;color: rgba(128,128,128,0.8);font-size:12px;"><img src="/templates/static/images/bell (1).png" height="18" width="18" alt="">Notifications<button style="background:white;border:1px solid red; color:red;margin-left:5px">3</button></p>
+                
+              </div>
+              </div>
+              {% endfor %}
+            </fieldset>
+          </div>
+          <div style="width: 100%; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="main-container">
+             <!-- Set a fixed width and center the container -->
+                <h5 class="research"><b>Suggested circle</b></h5>
+                    <div class="inner-card card" style="width: 100; position: relative;padding:10px background-color:white;">
+                        <img class="card-img-top" src="/templates/static/images/suggested.jpg" alt="Card image cap" style="width: 100%;height: 100px;">
+                        <div class="rounded-image" style="position: absolute; width: 60px; height: 60px; left: 20px; top: 70px;">
+                            <img src="/templates/static/images/profile3.jpg" alt="Round Image" style="width: 100%; height: 100%; border-radius: 50%;">
+                        </div>
+                        <div class="Suggested2" style="text-align:center;margin-top:30px">
+                          <p>Infectious disease groups</p>
+                        </div>
+                        <div style="margin-top:-15px;margin-left:20px;">
+                          <p>@diseasegroup</p>
+                        </div>
+
+                        <button class="button3">Join Circle</button>
+                        <!--<div class="disease-group">
+                            @diseasegroup
+                        </div>
+                        <div class="infectious-disease-group">
+                            Infectious disease Group
+                        </div>-->
+                    </div>
+                
+            
+        </div>
+        
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="Explore">
+          <h5 class="research"><b>Explore Events</b></h5>
+          
+          <div class="box">
+            <img src="/templates/static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+          <div class="box1">
+            <img src="/templates/static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          {%for i in infect %}
+          <div class="infect">
+            <img src="/templates/static/images/{{i.image}}" width="111%" height="180px" alt="Infect Image">
+            <p style="margin-top:14px;">{{i.text}}</p>
+          </div>
+            <div class="overlay">
+                
+                <div class="price">
+                    <b><p style="margin-right:3.5%;">{{i.price}}</p></b>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h4>Circle Terms</h4>
+
+        <div class="terms-list">
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>            
+              <span class="term-name">About</span>
+            </div>
+
+            <div class="term-item">
+                <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>
+                <span class="term-name">Career</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Advertise</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Help</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Content Policy</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/templates/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">User Policy</span>
+            </div>
+            <div class="term-item">
+              <span class="term-name " style="text-align:center;font-size:15px;margin-bottom:4px">Medically 2020.All rights reserved</span>
+            </div>
+            
+        </div>
+        </div>
+        
+      
+
+        </div>
+  
+        <div class="col-lg-8 col-12" style="background-color: white; position: relative;">
+          <div style="width: 100%; height: 300px; margin-top: 15px; position: relative;">
+            <img src="/templates/static/UploadFiles/{{user_data.Cover_IMG}}" alt="User Image" class="img-fluid" style="border-radius: 8px; width: 100%; height: 100%;">
+            <!-- Small circular image at the bottom left -->
+            <img src="/templates/static/UploadFiles/{{user_data.Thumb_IMG}}" alt="Small Circle Image" style="position: absolute; left: 30px; bottom: 10px; width: 110px; height: 110px; border-radius: 50%; margin: 10px;border:5px solid white">
+          </div>
+          <div class="d-flex flex-row align-items-center mt-3 post2">
+            <div class="user1">
+                <p class="post3" style="font-weight: bold; margin-bottom: 0; text-align:start;">{{user_data.Name}}</p>
+                {% if user_data.Occupation == "Doctor" and user_data.verify=="Verified"%}
+                <img src="/templates/static/images/verified.png" height="25px" width="25px" style="margin-left:10px;margin-top:8px;" alt="" class="verified-img">
+                {% endif %}
+            </div>
+            <div class="d-flex justify-content-end align-items-center flex-grow-1 mt-3">
+              
+                <div class="d-flex flex-row justify-content-evenly gap-3 align-items-end post2">
+                    <p class="mb-0"><b>Joined:</b> <span class="text-primary-emphasis">{{user_data.Created_at}}</span></p>
+                    <p class="mb-0"><b>Followers:</b> 100</p>
+                    <p class="mb-0"><b>Following:</b> 50</p>
+                    <p class="mb-0"><b>Posts:</b>{{d}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+          <p class="post4" style="color: #2FCACA; margin-top: -5px;font-size:17px;">@{{user_data.Username}}</p>
+      </div>
+          <div class="d-flex justify-content mt-3">
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToProfileabout()">Posts</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;" onclick="redirectToAnotherPage()">About</button>
+            <button type="button" class="btn btn-dark button1" style="margin-right: 25px;">Edit</button>
+            
+          </div>
+          <div style="width: 100%;  margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+            <div style="display:flex;">
+              <div style="width: 70%;padding-top: 5px; padding-left:20px;">
+                <h4 style="margin-left:-1.5%;">About Me!</h4>
+                <p>{{user_data.Aboutus}}</p>
+              </div>
+              <div class="social" style="width: 30%; padding-right: 20px;  margin-left:5%;">
+                <h5 style="margin-top:5.5%;">Share Profile</h5>
+                <div class="d-flex justify-content g-2 col social1">
+                    <img src="/templates/static/images/facebook1.png" height="30" width="30" alt="" class="img-spacing">
+                    <img src="/templates/static/images/insta.png" height="30" width="30" alt="" class="img-spacing">
+                    <img src="/templates/static/images/google.png" height="30" width="30" alt="" class="img-spacing">
+                </div>
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content g-2 col" style="padding-left: 15px;margin-right: 20px;margin-left: 5px;margin-top:33px">
+              <img src="/templates/static/images/image1.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image2.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image3.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image4.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image5.png" height="56" width="50" alt="" class="img-spacing">
+              <img src="/templates/static/images/image6.png" height="56" width="50" alt="" class="img-spacing">
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+          <div class="col-md-8 col-12" style="background-color: white; height: 60%;">
+            <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+              <div class="info-container">
+                <div class="personal-heading">
+                    <h2>Personal</h2>
+                </div>
+        
+                <div class="info-item">
+                    <label>Date of Birth:</label>
+                    <span class="info-value">{{user_data.Dob}}</span>
+                </div>
+        
+                <div class="info-item">
+                    <label>Location:</label>
+                    <span class="info-value">{{user_data.Location}}</span>
+                </div>
+        
+                <div class="info-item">
+                    <label>Email:</label>
+                    <span class="info-value">{{user_data.Emailid}}</span>
+                </div>
+        
+                <div class="info-item">
+                    <label>Web:</label>
+                    <span class="info-value"><a href="{{user_data.Website}}" style="color:black;" target="_blank">view</a></span>
+                </div>
+        
+                <div class="info-item">
+                    <label>Occupation:</label>
+                    <span class="info-value">{{user_data.Occupation}}</span>
+                </div>
+                <div class="info-item">
+                  <label>Specialist:</label>
+                  <span class="info-value">{{user_data.Position}}</span>
+              </div>
+            </div>
+              
+          </div>
+          <div style="width: 100%; margin-top: 15px; position: relative; border: 1px solid white; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <h2 style="text-align: left;margin-left:10px;">Interest</h2>
+        
+            <div class="subtopic-container">
+                
+                <p>{{user_data.Interest}}</p>
+            </div>
+        
+            
+        
+           
+        
+            <!-- Add more subtopics as needed -->
+        </div>   
+          </div>
+          <div class="col-md-4 col-12" >
+            <div style="width:95%; margin-top:20px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+              <h4>Complete Your Profile</h4>
+              <h6>Your profile is missing followings!</h6>
+                <div style="padding: 60px;padding-top:0px;padding-bottom:15px;">
+                  <canvas id="doughnutChart"></canvas>
+              </div>
+
+                <div style="padding-left: 10px;">
+                    <span style="display: inline;padding-right: 10px;padding-left:10px;"><img src="/templates/static/images/plus.png" height="25" width="25" alt="" class="img-spacing"></span>
+                    <p style="display:inline;">Upload your picture</p>
+                </div>
+                <div style="padding-left: 10px;margin-top:0px;">
+                  <span style="display: inline;padding-right: 10px;padding-left:10px;"><img src="/templates/static/images/plus.png" height="25" width="25" alt="" class="img-spacing"></span>
+                  <p style="display:inline;">Upload certificate</p>
+                </div>
+            </div>
+            <div style="width:95%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <div class="messenger">
+                <h4>You may like groups</h4>
+               
+                <ul>
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">
+                        <b>Jeffry Joshuva<span>Dept Colleague</span></b>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </li>
+
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">
+                        <b>Saranraj<span>Dept Colleague</span></b>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </li>
+
+                    <li>
+                        <img src="/templates/static/images/profile3.jpg" alt="user" class="jefImg">
+                        <b>Yogaraj<span>Dept Colleague</span></b>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </li>
+                </ul>
+            </div>
+
+          </div>
+          <div class="custom-container p-3 rounded" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);width:95%;">
+            <h5 class="research" style="white-space: nowrap;"><b>Ask Research Question?</b></h5>
+            <div class="term-item" style="text-align: center;">
+                <span class="reply-icon1"><img src="/templates/static/images/i.png" height="25" width="25" alt=""></span>
+                <span class="term-name" style="display: block;font-size:13px;text-align:justify">Ask questions in QA to get help from experts in your field</span>
+            </div>
+            <button type="button" class="btn btn-dark button3 mt-3" style="display: block; margin: 0 auto;">Ask a question</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+      
+<div class="footer1">
+  <img src="/templates/static/images/footer.png" width="100%"  alt="Your Image Description">
+
+</div>
+    <div class="d-flex">
+      
+      <footer class="text-center py-3" style="background-color: #2FCACA; color: white; margin-top: 20px; width: 100%;">
+          <p>&copy; All rights reserved by CoderzBot</p>
+      </footer>
+  </div>
+  <script>
+    // Sample data for the doughnut chart
+    var doughnutChartData = {
+        //labels: ['Completed', 'Remaining'],
+        
+        datasets: [{
+            data: [{{complete}}, {{c}}], // Assuming 85% completed
+            backgroundColor: ['#2FCACA', '#ccc']
+        }]
+    };
+  
+    // Get the doughnut chart canvas element
+    var doughnutChartCanvas = document.getElementById('doughnutChart');
+  
+    // Create a doughnut chart
+    var doughnutChart = new Chart(doughnutChartCanvas, {
+        type: 'doughnut',
+        data: doughnutChartData
+    });
+  </script>
+  
+
+
+  <!-- Bootstrap JS and Font Awesome CDN links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+  
+  
+</body>
+
+</html>

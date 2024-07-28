@@ -1,0 +1,86 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.website-input,
+.messaging-input {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #333;
+}
+
+a[href^="http://"],
+a[href^="https://"] {
+    text-decoration: none;
+    color: turquoise;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: turquoise;
+}
+
+button,
+.save-btn {
+    background-color: turquoise;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover,
+.save-btn:hover {
+    background-color: #2bb6a8;
+}
+
+.modal-footer {
+    border-bottom: 20px solid turquoise;
+    padding-bottom: 20px;
+}
+
+.modal-title {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}

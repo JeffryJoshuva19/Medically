@@ -1,0 +1,199 @@
+
+
+/* Heading Styles */
+h1 {
+  color: #0BE6C1;
+  margin-left: 20px;
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  border: none;
+  border-color: none;
+}
+
+/* Input Styles */
+.d10 {
+  width: 500px;
+  border-radius: 20px;
+  height: 30px;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.i1 {
+  border-color: none;
+  border: none;
+  width: 90%;
+  height: 100%;
+}
+
+.bt10 {
+  height: 40px;
+  width: 40px;
+}
+
+.d11 {
+  width: 150px;
+  border-radius: 20px;
+  height: 30px;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.n {
+  margin-left: auto;
+}
+
+.search {
+  height: 80%;
+  width: 7%;
+}
+
+.bt10 {
+  margin-right: 20px;
+}
+
+/* Navigation Bar Styles */
+.d2 {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px dotted gray;
+  background-color: white;
+  display: flex;
+}
+
+.d25 {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.d24 {
+  margin-left: 20%;
+  display: flex;
+  height: 100%;
+  width: 60%;
+  align-items: center;
+}
+
+.d24i {
+  margin-right: 20%;
+}
+
+/* Fieldset Styles */
+.fe1 {
+  width: 60%;
+  height: 820px;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+/* Sidebar Styles */
+.hd {
+  height: 100%;
+  width: 25%;
+}
+
+.hd:hover,
+.hd:visited {
+  border-bottom: 3px solid #2FCACA;
+}
+
+/* Profile Circle Styles */
+.pro {
+  height: 160px;
+  width: 160px;
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.ic {
+  height: 200px;
+  width: 200px;
+  border-radius: 40%;
+}
+
+/* Profile Card Styles */
+.p1 {
+  display: flex;
+}
+
+.p11 {
+  text-align: center;
+}
+
+.jc {
+  height: 40px;
+  width: 100px;
+  border: 1px solid #2FCACA;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #2FCACA;
+}
+
+.jc:hover {
+  background-color: #2FCACA;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination Styles */
+.numrow {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbt {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid #2FCACA;
+  background-color: #2FCACA;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Other Styles */
+.line {
+  width: 90%;
+  margin-left: 40px;
+}
+
+.arrow {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid #2FCACA;
+  background-color: #7DF4F4;
+  color: white;
+  position: absolute;
+  color: #2FCACA;
+}
+
+.forward {
+  margin-left: 10px;
+  padding: 12px;
+}
+
+.backward {
+  margin-left: 15px;
+  padding: 12px;
+}
+
+/* Optional: Add hover effects or additional styles as needed */

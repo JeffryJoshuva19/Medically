@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../static/js/profilepost.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-..."></script>
+
+    
+ 
+</head>
+
+<body>
+
+
+    <!--  project header top most -->
+    <div class="custom-header ">
+      <div class="logo col">
+        <img src="../static/images/fire-cracker.png" alt="Logo">
+      </div>
+      <div class="search-bar col">
+        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search..." >
+      </div>
+      <div class="user-info">
+        <img src="../static/images/profile2.jpg" alt="User Image">
+        <div class="user-name">Jeffry Joshuva</div>
+      </div>
+      <div class="d-flex justify-content-evenly g-2 col">
+        <img src="../static/images/home (1).png" height="30" width="30" alt="">
+        <img src="../static/images/message (1).png" height="30" width="30" alt="">
+        <img src="../static/images/notification.png" height="30" width="30" alt="">
+        <img src="../static/images/plus.png" height="30" width="30" alt="">
+        <img src="../static/images/grid-lines.png" height="30" width="30" alt="">
+      </div>
+    </div>
+  <!--end of top most header-->
+   <!-- <div class="custom-header1">
+      <div class="d-flex justify-content-evenly">
+
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <img src="circle (1).png" height="30" width="30" alt="">
+        <div>
+          <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+          <div class="star-rating">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <!--nav bar for header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <a class="navbar-brand" href="#"><img src="../static/images/menu.png" alt="menu" height="30" width="30"></a>
+        
+      </button>
+      <div class="collapse navbar-collapse navhead" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item ">
+            <a class="nav-link image" id="imgtxt"  href="#"><img src="../static/images/circle (1).png" onclick="showtxt()" id="showtxext" height="30" width="30" alt="">New text</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/circle.html"><img src="../static/images/multiple-users-silhouette.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/comments.html"><img src="../static/images/video.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../static/images/two-books.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../static/images/blog-removebg-preview.png" height="40" width="40" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./templates/profilepost.html"><img src="../static/images/user-black-close-up-shape.png" height="30" width="30" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right-content">
+        <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+        <div class="star-rating">
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-half" style="color:#2FCACA"></i>
+        </div>
+      </div>
+    </nav>
+    <!--end of the navbar-->
+    <div class="container">
+      <div class="row" >
+        <div class="col-lg-4 col-12" style="background-color: white;">         
+           <div style="width:100%; margin-top: 10px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <fieldset class="bodyf2">
+              <h5 style="font-size:20px;margin:6px;"><b>Research publications</b></h5>
+              <div class="bodyright">
+                <img src="../static/images/goodedu.png" height="90px" width="90px">
+                <div>
+                <p class="pf1"><b>Alzheimer's disease - paths for <br>treatment</b></p>
+                <p style="margin-right:3px;color: rgba(128,128,128,0.8);font-size:small"><img src="../static/images/bell (1).png" height="20" width="20" alt="">Notifications<button style="background:white;border:1px solid red; color:red;margin-left:5px">3</button></p>
+                
+              </div>
+              </div>
+              <div class="bodyright">
+                <img src="../static/images/goodedu.png" height="90px" width="90px">
+                <div>
+                <p class="pf1"><b>Alzheimer's disease - paths for <br>treatment</b></p>
+                <p style="color: rgba(128,128,128,0.8);font-size:small"><img src="../static/images/bell (1).png" height="20" width="20" alt="">Notifications<button style="background:white;border:1px solid red; color:red;margin-left:5px">3</button></p>
+              </div>
+              </div>
+            </fieldset>
+          </div>
+          <div style="width: 100%; margin-top: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="main-container">
+             <!-- Set a fixed width and center the container -->
+                <h5 class="research"><b>Suggested circle</b></h5>
+                    <div class="inner-card card" style="width: 100; position: relative;padding:10px background-color:white;">
+                        <img class="card-img-top" src="../static/images/suggested.jpg" alt="Card image cap" style="width: 100%;height: 100px;">
+                        <div class="rounded-image" style="position: absolute; width: 60px; height: 60px; left: 20px; top: 70px;">
+                            <img src="../static/images/profile3.jpg" alt="Round Image" style="width: 100%; height: 100%; border-radius: 50%;">
+                        </div>
+                        <div class="Suggested2" style="text-align:center;margin-top:30px">
+                          <p>Infectious disease groups</p>
+                        </div>
+                        <div style="margin-top:-15px;margin-left:20px;">
+                          <p>@diseasegroup</p>
+                        </div>
+
+                        <button class="button3">Join Circle</button>
+                        <!--<div class="disease-group">
+                            @diseasegroup
+                        </div>
+                        <div class="infectious-disease-group">
+                            Infectious disease Group
+                        </div>-->
+                    </div>
+                
+            
+        </div>
+        
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="Explore">
+          <h5 class="research"><b>Explore Events</b></h5>
+          
+          <div class="box">
+            <img src="../static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+          <div class="box1">
+            <img src="../static/images/gift-box-with-a-bow.png" width="25" height="25" alt="gift">
+            <p>Alzheimer's disease - paths for treatment</p>
+          </div>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <div class="infect">
+            <img src="../static/images/infect.jpg" width="111%" height="180px" alt="Infect Image">
+          </div>
+            <div class="overlay">
+                <p>Infectious disease past versus present</p>
+                <div class="price">
+                    <b><p>$19.99/M</p></b>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h4>Circle Terms</h4>
+
+        <div class="terms-list">
+            <div class="term-item">
+              <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>            
+              <span class="term-name">About</span>
+            </div>
+
+            <div class="term-item">
+                <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>
+                <span class="term-name">Career</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Advertise</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Help</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Content Policy</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="../static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">User Policy</span>
+            </div>
+            <div class="term-item">
+              <span class="term-name " style="text-align:center;font-size:15px;margin-bottom:4px">Medically 2020.All rights reserved</span>
+            </div>
+            
+        </div>
+        </div>
+        <div class="custom-container p-3 rounded" style="box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h5 class="research" style="white-space: nowrap;"><b>Ask Research Question?</b></h5>
+          <div class="term-item" style="text-align: center;">
+              <span class="reply-icon1"><img src="../static/images/i.png" height="25" width="25" alt=""></span>
+              <span class="term-name" style="display: block;font-size:13px;text-align:justify">Ask questions in QA to get help from experts in your field</span>
+          </div>
+          <button type="button" class="btn btn-dark button3 mt-3" style="display: block; margin: 0 auto;">Ask a question</button>
+      </div>
+      
+
+        </div>
+  
+        <div class="col-lg-8 col-12" style="background-color: white; position: relative;">
+          <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+
+          <div class="fb-post1">
+            <div class="fb-post1-container">
+                <div class="fb-p1-main">
+                    <div class="post-title">
+                        <img src="../static/images/profile3.jpg" alt="user picture">
+                        <ul>
+                            <li><h4 style="margin-bottom: 4px;">Turget alp<span>2 hours ago</span></h4></li>
+                            <li><span style="font-size: 12px;">02 march at 12:55 PM</span></li>
+                        </ul>
+                    </div>
+                    <div class="post-images">
+                        <div class="post-images1">
+                            <img src="../static/images/post.jpg" alt="post images 01" class="postimg" >
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <h3 style="margin-top: 10px;">Alzheimer's disease - path for treatment</h3>
+                        <p style="margin-top: 5px;">Treating the symptoms of Alzheimer’s can help provide people with comfort, dignity, and independence for a longer period of time and also assist their caregivers.</p>
+                    </div>
+                    <div class="post-icons1">
+                        <div>
+                            <img src="../static/images/eye.png" height="30" width="30" alt="" class="img-spacing">
+                            <img src="../static/images/message (2).png" height="25" width="25" alt="" class="img-spacing">
+                            <img src="../static/images/star.png" height="25" width="25" alt="" class="img-spacing">
+                            <img src="../static/images/share.png" height="20" width="20" alt="" class="img-spacing">
+                        </div>
+                        <div class="reply-icon">
+                            <img src="../static/images/reply.png" height="20" width="20" alt="" class="img-spacing">
+                        </div>
+                    </div>
+                    <div class="like-comment">
+                        <ul>
+                            <li>
+                                <button id="likeButton" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up like-button"></i>
+                                    <span>Like</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="commentButton" onclick="toggleCommentSection()">
+                                    <i class="far fa-comment-dots" ></i>
+                                    <span>Comment</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <i class="fas fa-share-alt"></i>
+                                    <span>Share</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="emoji-selection">
+                            <!-- Add your emoji selection options here -->
+                            <button><img src="../static/images/cool.png" height="30" width="30" alt="" class="img-spacing"></button>
+                        </div>
+                    </div>
+                    <div class="search-bar1 search" style="position: relative; display: none;" id="commentSection">
+                        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Write comment" style="margin-left: 10px; border: 1px solid black; margin-top: 20px; padding: 20px;">
+                        <img src="../static/images/telegram.png" height="20" width="20" alt="post" style="position: absolute; right: 65px; top: 40px;">
+                    </div>
+                    <div class="fb-post1" style="display: none;" id="comments">
+                        <div class="fb-post1-container">
+                            <div class="fb-p1-main">
+                                <div class="post-title">
+                                    <img src="../static/images/A_small_cup_of_coffee.JPG" alt="user picture">
+                                    <ul>
+                                        <li><h5 style="margin-bottom:4px;">Arham Kabir <span>2 hours ago</span></h5></li>
+                                        <p>Hello Everyone Thanks for Watching Please SUBSCRIBE My Channel - Like Comments and Share</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+
+      <div class="fb-post1">
+        <div class="fb-post1-container">
+            <div class="fb-p1-main">
+                <div class="post-title">
+                    <img src="../static/images/profile3.jpg" alt="user picture">
+                    <ul>
+                        <li><h4 style="margin-bottom: 4px;">Turget alp<span>2 hours ago</span></h4></li>
+                        <li><span style="font-size: 12px;">02 march at 12:55 PM</span></li>
+                    </ul>
+                </div>
+                <div class="post-images">
+                    <div class="post-images1">
+                        <img src="../static/images/post.jpg" alt="post images 01" class="postimg" >
+                    </div>
+                </div>
+                <div class="post-title">
+                    <h3 style="margin-top: 10px;">Alzheimer's disease - path for treatment</h3>
+                    <p style="margin-top: 5px;">Treating the symptoms of Alzheimer’s can help provide people with comfort, dignity, and independence for a longer period of time and also assist their caregivers.</p>
+                </div>
+                <div class="post-icons1">
+                    <div>
+                        <img src="../static/images/eye.png" height="30" width="30" alt="" class="img-spacing">
+                        <img src="../static/images/message (2).png" height="25" width="25" alt="" class="img-spacing">
+                        <img src="../static/images/star.png" height="25" width="25" alt="" class="img-spacing">
+                        <img src="../static/images/share.png" height="20" width="20" alt="" class="img-spacing">
+                    </div>
+                    <div class="reply-icon">
+                        <img src="../static/images/reply.png" height="20" width="20" alt="" class="img-spacing">
+                    </div>
+                </div>
+                <div class="like-comment">
+                    <ul>
+                        <li>
+                            <button id="likeButton" onclick="toggleLike()">
+                                <i class="fas fa-thumbs-up like-button"></i>
+                                <span>Like</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="commentButton" onclick="toggleCommentSection()">
+                                <i class="far fa-comment-dots" ></i>
+                                <span>Comment</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fas fa-share-alt"></i>
+                                <span>Share</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="emoji-selection">
+                        <!-- Add your emoji selection options here -->
+                        <button><img src="../static/images/cool.png" height="30" width="30" alt="" class="img-spacing"></button>
+                    </div>
+                </div>
+                <div class="search-bar1 search" style="position: relative; display: none;" id="commentSection">
+                    <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Write comment" style="margin-left: 10px; border: 1px solid black; margin-top: 20px; padding: 20px;">
+                    <img src="../static/images/telegram.png" height="20" width="20" alt="post" style="position: absolute; right: 65px; top: 40px;">
+                </div>
+                <div class="fb-post1" style="display: none;" id="comments">
+                    <div class="fb-post1-container">
+                        <div class="fb-p1-main">
+                            <div class="post-title">
+                                <img src="../static/images/A_small_cup_of_coffee.JPG" alt="user picture">
+                                <ul>
+                                    <li><h5 style="margin-bottom:4px;">Arham Kabir <span>2 hours ago</span></h5></li>
+                                    <p>Hello Everyone Thanks for Watching Please SUBSCRIBE My Channel - Like Comments and Share</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+
+  <div class="fb-post1">
+    <div class="fb-post1-container">
+        <div class="fb-p1-main">
+            <div class="post-title">
+                <img src="../static/images/profile3.jpg" alt="user picture">
+                <ul>
+                    <li><h4 style="margin-bottom: 4px;">Turget alp<span>2 hours ago</span></h4></li>
+                    <li><span style="font-size: 12px;">02 march at 12:55 PM</span></li>
+                </ul>
+            </div>
+            <div class="post-images">
+                <div class="post-images1">
+                    <img src="../static/images/post.jpg" alt="post images 01" class="postimg" >
+                </div>
+            </div>
+            <div class="post-title">
+                <h3 style="margin-top: 10px;">Alzheimer's disease - path for treatment</h3>
+                <p style="margin-top: 5px;">Treating the symptoms of Alzheimer’s can help provide people with comfort, dignity, and independence for a longer period of time and also assist their caregivers.</p>
+            </div>
+            <div class="post-icons1">
+                <div>
+                    <img src="../static/images/eye.png" height="30" width="30" alt="" class="img-spacing">
+                    <img src="../static/images/message (2).png" height="25" width="25" alt="" class="img-spacing">
+                    <img src="../static/images/star.png" height="25" width="25" alt="" class="img-spacing">
+                    <img src="../static/images/share.png" height="20" width="20" alt="" class="img-spacing">
+                </div>
+                <div class="reply-icon">
+                    <img src="../static/images/reply.png" height="20" width="20" alt="" class="img-spacing">
+                </div>
+            </div>
+            <div class="like-comment">
+                <ul>
+                    <li>
+                        <button id="likeButton" onclick="toggleLike()">
+                            <i class="fas fa-thumbs-up like-button"></i>
+                            <span>Like</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="commentButton" onclick="toggleCommentSection()">
+                            <i class="far fa-comment-dots" ></i>
+                            <span>Comment</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="emoji-selection">
+                    <!-- Add your emoji selection options here -->
+                    <button><img src="../static/images/cool.png" height="30" width="30" alt="" class="img-spacing"></button>
+                </div>
+            </div>
+            <div class="search-bar1 search" style="position: relative; display: none;" id="commentSection">
+                <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Write comment" style="margin-left: 10px; border: 1px solid black; margin-top: 20px; padding: 20px;">
+                <img src="../static/images/telegram.png" height="20" width="20" alt="post" style="position: absolute; right: 65px; top: 40px;">
+            </div>
+            <div class="fb-post1" style="display: none;" id="comments">
+                <div class="fb-post1-container">
+                    <div class="fb-p1-main">
+                        <div class="post-title">
+                            <img src="../static/images/A_small_cup_of_coffee.JPG" alt="user picture">
+                            <ul>
+                                <li><h5 style="margin-bottom:4px;">Arham Kabir <span>2 hours ago</span></h5></li>
+                                <p>Hello Everyone Thanks for Watching Please SUBSCRIBE My Channel - Like Comments and Share</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+  </div>
+  
+
+</div>
+</div>
+  
+      
+        <div class="footer1">
+          <img src="../static/images/footer.png" width="100%"  alt="Your Image Description">
+        
+        </div>
+            <div class="d-flex">
+              
+              <footer class="text-center py-3" style="background-color: #2FCACA; color: white; margin-top: 20px; width: 100%;">
+                  <p>&copy; All rights reserved by CoderzBot</p>
+              </footer>
+          </div>
+
+  <!-- Bootstrap JS and Font Awesome CDN links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+  
+  
+</body>
+
+</html>

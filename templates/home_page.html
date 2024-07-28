@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/static/js/profilepost.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    
+ 
+</head>
+
+<body>
+
+  
+    <!--  project header top most -->
+    <div class="custom-header ">
+      <div class="logo col">
+        <img src="/static/images/fire-cracker.png" alt="Logo">
+      </div>
+      <div class="search-bar col">
+        <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search..." >
+      </div>
+      <div class="user-info">
+        <img src="/static/images/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="User Image">
+        <div class="user-name">Jeffry</div>
+      </div>
+      <div class="d-flex justify-content-evenly g-2 col">
+        <img src="/static/images/home (1).png" height="30" width="30" alt="">
+        <img src="/static/images/message (1).png" height="30" width="30" alt="">
+        <img src="/static/images/notification.png" height="30" width="30" alt="">
+        <img src="/static/images/plus.png" height="30" width="30" alt="">
+        <img src="/static/images/grid-lines.png" height="30" width="30" alt="">
+      </div>
+    </div>
+  
+    <!--nav bar for header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="/static/images/menu.png" alt="menu" height="30" width="30"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navhead" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link image active" id="imgtxt"  href="#"><img src="/static/images/circle (1).png" onclick="showtxt()" id="showtxext" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/circle.html"><img src="/static/images/multiple-users-silhouette.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/comments.html"><img src="/static/images/video.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/static/images/two-books.png" height="30" width="30" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/static/images/blog-removebg-preview.png" height="40" width="40" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/profilepost.html"><img src="/static/images/user-black-close-up-shape.png" height="30" width="30" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-1">Followers: <span id="followers-count">100</span></p>
+        <div class="star-rating">
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-fill" style="color:#2FCACA"></i>
+          <i class="bi bi-star-half" style="color:#2FCACA"></i>
+        </div>
+    </nav>
+    <!--end of the navbar-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="background-color: white; width: 20%;">
+          <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+            <div id="clockContainer">
+              <div id="hour"></div>
+              <div id="minute"></div>
+              <div id="second"></div>
+          </div>
+          </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);" class="Explore">
+          
+            <h2>Complete Your Profile</h2>
+            <p>Your profile is missing some information. Please fill in the following details:</p>
+        
+            <div style="padding: 15px;">
+              <canvas id="doughnutChart"></canvas>
+              <p>Progress: 85% completed</p>
+          </div>
+        
+            <!-- Plus icon and text for uploading image -->
+            <div style="padding: 15px;">
+                <span style="display: inline-block; vertical-align: middle; padding-right: 10px;">+</span>
+                <span style="display: inline-block; vertical-align: middle;">Upload your image</span>
+            </div>
+        
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <fieldset class="bodyf2">
+            <h2 class="h3"><b>Research publications</b></h2>
+            <div class="bodyright">
+              <img src="/static/images/goodedu.png" height="60px" width="60px">
+              <div>
+              <p class="pf1"><b>Alzheimer's disease - paths for <br>treatment</b></p>
+              <p style="margin-top: 5px; color: rgba(128,128,128,0.8);">Notifications  <button style="border: red; color:red;">3</button></p>
+            </div>
+            </div>
+            <div class="bodyright">
+              <img src="/static/images/goodedu.png" height="60px" width="60px">
+              <div>
+              <p class="pf1"><b>Alzheimer's disease - paths for <br>treatment</b></p>
+              <p style="margin-top: 5px; color: rgba(128,128,128,0.8);">Notifications  <button style="border: red; color:red;">3</button></p>
+            </div>
+            </div>
+            
+            
+          </fieldset>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+          <h4>Circle Terms</h4>
+
+        <div class="terms-list">
+            <div class="term-item">
+              <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>            
+              <span class="term-name">About</span>
+            </div>
+
+            <div class="term-item">
+                <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>
+                <span class="term-name">Career</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Advertise</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Help</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">Content Policy</span>
+            </div>
+
+            <div class="term-item">
+              <span class="reply-icon"><img src="/static/images/reply (1).png" height="25" width="25" alt=""></span>
+              <span class="term-name">User Policy</span>
+            </div>
+        </div>
+        </div>
+        <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);">
+                    
+        </div>
+
+        </div>
+  
+        <div class="col-md-4" style="background-color: white; width: 80%; position: relative;">
+           
+         
+
+          <div class="d-flex justify-content mt-3">
+            <button type="button" class="btn btn-dark button1 col-2" style="margin-right: 25px;" onclick="redirectToProfileabout()">Home</button>
+            <button type="button" class="btn btn-dark button1 col-2" style="margin-right: 25px;" onclick="redirectToAnotherPage()">Recent</button>
+            <button type="button" class="btn btn-dark button1 col-2" >Favourite</button>
+            
+           
+        </div>
+        <div class="container">
+        <div class="row mt-3">
+          <div class="col-md-8" style="background-color: white; height: 60%;"> <!-- 60% width -->
+            <div style="width: 100%; height: 200px; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+              <h4 style="margin-left: 6px; padding-top:10px">Create a new circle</h4>
+              <div class="search-bar search">
+                <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Create New Circle..." style="margin-left: 20px; border: 1px solid black; margin-top: 20px" data-toggle="modal" data-target="#createCircleModal">
+              </div>
+              <div class="post-icon">
+                <a href="#" style="background: #ffebed;">
+                <i style="background: #ff4154;" class="fa-solid fa-camera"></i>
+                Gallery</a>
+
+                <a href="#" style="background: #ccdcff;">
+                <i style="background: #0053ff;" class="fa-solid fa-video"></i>
+                Video</a>
+            
+                <a href="#" style="background: #fff4d1;">
+                <i style="background: #ffca28;" class="fa-solid fa-face-grin-beam"></i>
+                Feeling / Activity</a>
+
+            </div>
+          </div>
+          <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+            <div class="profile-container">
+
+            <div class="profile-box">
+              <div class="profile-image">
+
+              </div>
+              <div class="profile-name">John Doe</div>
+              <button class="join-button">Join</button>
+              <span class="message-icon">&#9993;</span>
+          </div>
+      
+          <div class="profile-box">
+            <div class="profile-image">
+            </div>
+            <div class="profile-name">John Doe</div>
+            <button class="join-button">Join</button>
+            <span class="message-icon">&#9993;</span>          '
+          </div>
+      
+          <div class="profile-box">
+            <div class="profile-image">
+
+            </div>
+            <div class="profile-name">John Doe</div>
+            <button class="join-button">Join</button>
+            <span class="message-icon">&#9993;</span>
+          </div>
+      
+          <div class="profile-box">
+            <div class="profile-image">
+
+            </div>
+            <div class="profile-name">John Doe</div>
+            <button class="join-button">Join</button>
+            <span class="message-icon">&#9993;</span>
+          </div>
+        </div>
+        </div>
+          <div style="width: 100%; margin-top: 15px; position: relative;border: 1px solid white;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); ">
+            <div class="fb-post1">
+              <div class="fb-post1-container">
+                  <div class="fb-p1-main">
+                      <div class="post-title">
+                          <img src="/static/images/A_small_cup_of_coffee.JPG" alt="user picture">
+                          <ul>
+                              <li><h3>Arham Kabir <span> . 2 hours ago</span></h3></li>
+                              <li><span>02 march at 12:55 PM</span></li>
+                          </ul>
+                          
+                      </div>
+
+                      <div class="post-images">
+                          <div class="post-images1">
+                              <img src="/static/images/A_small_cup_of_coffee.JPG" alt="post images 01">
+                              
+                          </div>
+                      </div>
+                      <div class="post-title">
+                        <h3>Alzheimer's disease - path for treatment</h3>
+                        <p>Treating the symptoms of Alzheimer’s can help provide people with comfort, dignity, and independence for a longer period of time and also assist their caregivers.
+                        </p>
+                    </div>
+                    <div class="post-icons1">
+                      <div>
+                        <img src="/static/images/eye.png" height="30" width="30" alt="" class="img-spacing">
+                        <img src="/static/images/message (2).png" height="25" width="25" alt="" class="img-spacing">
+                        <img src="/static/images/star.png" height="25" width="25" alt="" class="img-spacing">
+                        <img src="/static/images/share.png" height="20" width="20" alt="" class="img-spacing">
+                      </div>
+                      <div class="reply-icon">
+                        <img src="/static/images/reply.png" height="20" width="20" alt="" class="img-spacing">
+                      </div>
+                    </div>
+
+
+                    <div class="like-comment">
+                      <ul>
+                        <li>
+                          <button>
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>Like</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <i class="far fa-comment-dots"></i>
+                            <span>Comment</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button>
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="emoji-selection">
+                        <!-- Add your emoji selection options here -->
+                        <button><img src="/static/images/cool.png" height="30" width="30" alt="" class="img-spacing"></button>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="search-bar1 search" style="position: relative;">
+                      <input type="text" class="form-control" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Write comment" style="margin-left: 10px; border: 1px solid black; margin-top: 20px; padding: 20px;">
+                      <img src="/static/images/telegram.png" height="20" width="20" alt="post" style="position: absolute; right: 10px; top: 40px;">
+
+                    </div>
+                    
+
+
+                    <div class="fb-post1">
+                      <div class="fb-post1-container">
+                          <div class="fb-p1-main">
+                              <div class="post-title">
+                                  <img src="/static/images/A_small_cup_of_coffee.JPG" alt="user picture">
+                                  <ul>
+                                      <li><h3>Arham Kabir <span> . 2 hours ago</span></h3></li>
+                                      <li><span>02 march at 12:55 PM</span></li>
+                                  </ul>
+                                  <p>Hello Everyone Thanks for Watching Please SUBSCRIBE My Channel - Like Comments and Share
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                  </div>
+              </div>
+          </div>              
+        </div>
+        <button type="button" class="btn btn-dark button2">Load More...</button>
+          </div>
+          <div class="col-md-4" style=" height: 40%;"> <!-- 40% width -->
+            <div style="width:100%;height:200px; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <img src="/static/images/adertisement.jpg" alt="Advertisement" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <div class="messenger">
+                <h4>Follow People</h4>
+                
+                <ul>
+                    <li>
+                        <img src="/static/images/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="user">
+                        <b>Jeffry Joshuva<span>Dept Colleague</span></b>
+                    <div class="follow">
+                        <p>follow</p>
+                    </div>
+                    </li>
+
+                    <li>
+                        <img src="/static/images/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="user">
+                        <b>SaranRaj<span>Dept Colleague</span></b>
+                        <div class="follow">
+                          <p>follow</p>
+                      </div>
+                    </li>
+
+                    <li>
+                        <img src="/static/images/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="user">
+                        <b>Yogaraj<span>Dept Colleague</span></b>
+                        <div class="follow">
+                          <p>follow</p>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+
+            
+            </div>
+            <div style="width:100%; margin-top: 15px;box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);background-color: white;">
+              <h5 class="research">Ask Research question?</h5>
+          <div class="term-item">
+            <span class="reply-icon"><img src="/static/images/i.png" height="25" width="25" alt=""></span>
+            <span class="term-name">for any question please click the below question and ask your doubts</span>
+          </div>
+          <button type="button" class="btn btn-dark button3">Ask a question</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    </div>
+   
+    <div class="d-flex">
+      
+    <footer class="text-center py-3" style="background-color: #2FCACA; color: white; margin-top: 420px; width: 100%;">
+      <p>&copy; All rights reserved by CoderzBot</p>
+    </footer>
+  </div>
+  
+
+  <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="createCircleModal" tabindex="-1" role="dialog" aria-labelledby="createCircleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createCircleModalLabel">Create New Circle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Heading -->
+        <h6>Create New Circle</h6>
+        
+        <!-- Comment Box with Emoji Selection -->
+        <textarea class="form-control emoji-picker" placeholder="Write your comment..."></textarea>
+        
+        <!-- Emoji Picker -->
+        <div class="emoji-container">
+          <button type="button" class="btn btn-secondary emoji-picker-toggle" data-toggle="popover" data-placement="top" title="Emoji Picker">
+            😊
+          </button>
+          <div class="popover-content d-none">
+            <div class="emoji-picker"></div>
+          </div>
+        </div>
+        
+        <!-- Add Photos and Videos -->
+        <input type="file" name="photos" accept="image/*,video/*">
+        
+        <!-- Post a Gift -->
+        <!-- Implement your gift posting functionality here -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary button5" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary button4">Post</button>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+  // Sample data for the doughnut chart
+  var doughnutChartData = {
+      labels: ['Completed', 'Remaining'],
+      datasets: [{
+          data: [85, 15], // Assuming 85% completed
+          backgroundColor: ['#2FCACA', '#ccc']
+      }]
+  };
+
+  // Get the doughnut chart canvas element
+  var doughnutChartCanvas = document.getElementById('doughnutChart');
+
+  // Create a doughnut chart
+  var doughnutChart = new Chart(doughnutChartCanvas, {
+      type: 'doughnut',
+      data: doughnutChartData
+  });
+
+
+
+
+    $(document).ready(function() {
+        $('.navbar-nav .nav-link').on('click', function() {
+            // Remove the 'active' class from all nav-links
+            $('.navbar-nav .nav-link').removeClass('active');
+
+            // Add the 'active' class to the clicked nav-link
+            $(this).addClass('active');
+        });
+    });
+
+</script>
+
+
+
+  <!-- Bootstrap JS and Font Awesome CDN links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+  
+  
+  </script>
+</body>
+
+</html>
+<script>
+  $(document).ready(function() {
+    $(".emoji-picker").emojioneArea();
+    $('.emoji-picker-toggle').popover({
+      html: true,
+      content: function () {
+        return $(this).next('.popover-content').html();
+      }
+    });
+  });
+
+  
+  <script>

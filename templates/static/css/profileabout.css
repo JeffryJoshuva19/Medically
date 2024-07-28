@@ -1,0 +1,968 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0px;
+  }
+  
+  /* code for header */
+  .custom-header {
+    background-color: #e5e9edbe;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .custom-header1 {
+    background-color: lightblue;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .custom-header .logo,
+  .custom-header .search-bar {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  /*user image in the header*/
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 25px;
+    width: 170px;
+    height: 50px;
+  }
+  
+  .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .user-info .user-name {
+    font-size: 16px;
+    padding-right: 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .user-info {
+      width: auto;
+    }
+  
+    .user-info img {
+      width: 40px;
+      height: 30px;
+    }
+  
+    .user-info .user-name {
+      font-size: 16px;
+    }
+  }
+  
+  /*end of user  image in the header*/
+  
+  .search-bar input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    margin-left: -210px;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .custom-header .logo,
+    .custom-header .search-bar {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  /* end of the header code*/
+  .icons1 {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .icons svg,
+  .icons i {
+    font-size: 40px;
+    color: #4caf50;
+  }
+  
+  .le {
+    margin-left: 330px;
+    display: flex;
+  
+  }
+  
+  .le p {
+    margin-right: 25px;
+    font-weight: bold;
+  }
+  
+  .button1 {
+    background-color: #e5e9edbe;
+    color: #2FCACA;
+    border: none;
+  }
+  
+  .button1:hover {
+    background-color: #2FCACA;
+    color: #ffff;
+  }
+  
+  .button2 {
+    background-color: #2FCACA;
+    color: #ffff;
+    border: none;
+    margin-top: 20px;
+    width: 210px;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    margin-left: 35%;
+  
+  
+  }
+  
+  .button2:hover {
+    background-color: #e5e9edbe;
+    color: #2FCACA;
+  
+  }
+  
+  .imgSide {
+    width: 30%;
+    margin-left: 5%;
+  }
+  
+  .research {
+    margin: 4%;
+    padding-top: 4%;
+    font-size: 18px;
+  }
+  
+  .navbar-nav {
+    padding-left: 30px;
+  }
+  
+  .nav-link {
+    margin-left: 150px;
+  }
+  
+  .img-spacing {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /* Adjust the margin as needed */
+  }
+  
+  .image {
+    /* content: 'New Text'; */
+    display: none;
+    text-align: center;
+    border-bottom: 10px solid green;
+  }
+  
+  .jbutton {
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    left: 12px;
+    top: 150px;
+  }
+  
+  
+  
+  .navbar-right-content {
+    margin-right: 25px;
+  }
+  
+  
+  .box {
+    width: 93%;
+    height: 90px;
+    margin-bottom: 20px;
+    background-color: #8C6AD2;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .box1 {
+    width: 93%;
+    height: 90px;
+    margin-bottom: 20px;
+    background-color: #088DCD;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+  
+  
+  }
+  
+  .Explore {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .box img {
+    align-items: center;
+  }
+  
+  .box p {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+  }
+  
+  .box1 p {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+  }
+  
+  .button3 {
+    background-color: white;
+    color: #2FCACA;
+    border: 1px solid #2FCACA;
+    margin-top: 20px;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 23px;
+  
+  
+  
+  }
+  
+  .button3:hover {
+    background-color: #2FCACA;
+    color: white;
+    border: 1px solid white;
+  
+  }
+  
+  .messenger {
+    background: var(--white);
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .messenger-search {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .messenger-search .fa-user-group {
+    color: white;
+    padding: 10px;
+    background: #1877f2;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .messenger-search h4 {
+    font-size: 14px;
+    color: var(--black);
+    margin-right: 8px;
+  }
+  
+  .messenger-search input {
+    padding: 3px 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: var(--foreground);
+    color: var(--gray);
+  }
+  
+  .messenger ul {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .messenger ul li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: -2px;
+    overflow: hidden;
+    align-items: center;
+    background: var(--foreground);
+    padding: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    position: relative;
+    transition: .4s;
+  }
+  
+  .messenger ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+  
+  .messenger ul li:hover {
+    box-shadow: 0 4px 6px 0 var(--shadow);
+  }
+  
+  .messenger ul li b {
+    color: var(--black);
+    font-size: 14px;
+  }
+  
+  .follow {
+    color: #2FCACA;
+    padding: 10px;
+  
+  }
+  
+  .follow p {
+    padding: 2px;
+  }
+  
+  .messenger ul li b span {
+    display: block;
+    color: var(--gray);
+    font-size: 10px;
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  .messenger ul li span::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #12da01;
+    position: absolute;
+    border-radius: 50px;
+    top: 4px;
+    left: -12px;
+  }
+  
+  .messenger ul li:nth-child(2) span::before {
+    background: #ff9600;
+  }
+  
+  .messenger ul li i {
+    color: #1877f2;
+    position: absolute;
+    right: 12px;
+    top: 35%;
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px #95959561;
+  }
+  
+  .messenger-search .fa-magnifying-glass {
+    position: absolute;
+    right: 6px;
+    font-size: 12px;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  .post3 {
+    font-size: 30px;
+  }
+  
+  .post-icon {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+  
+  .post-icon a {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+  }
+  
+  .post-icon a i {
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  /*comments*/
+  .like-button {
+    color: black; /* Default color for the like button */
+  }
+  
+  .liked {
+    color: white;
+    background-color: #2FCACA; /* Color when the button is liked */
+  }
+  
+  /* facebook post 01 start */
+  
+  .fb-post1 {
+    background: var(--white);
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    border-radius: 20px;
+    padding: 15px 20px;
+    padding-bottom: 20px;
+  }
+  
+  .fb-post1-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .fb-p1-main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .post-title img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-title ul {
+    width: 87%;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  .post-title ul li {
+    margin-bottom: 3px;
+  }
+  
+  .post-title ul li span {
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .post-title p,
+  h3 {
+    color: var(--gray);
+  }
+  
+  
+  .post-title p a {
+    color: #4575b3;
+  }
+  
+  .post-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-images1 {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  
+  .post-images1 img:nth-child(1) {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  
+  .like-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .like-comment ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .like-comment li {
+    margin-right: 15px;
+    /* Adjust the spacing between buttons */
+  }
+  
+  .like-comment button {
+    margin-top: 10px;
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .like-comment button i {
+    margin-right: 5px;
+    /* Adjust the spacing between icon and text */
+  }
+  
+  .emoji-selection {
+    display: flex;
+  }
+  
+  .emoji-selection button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    /* Adjust the spacing between emoji buttons */
+  }
+  
+  
+  /* facebook post 01 end */
+  
+  /* icons inside the post*/
+  .post-icons1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-icons1 div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-icons1 img {
+    margin-right: 30px;
+    /* Adjust the spacing between icons */
+    font-size: 20px;
+    /* Adjust the font size of icons */
+  }
+  
+  .post-icons1 .reply-icon {
+    margin-left: auto;
+    /* Push the reply icon to the right */
+  }
+  
+  /* end of the post icons*/
+  .bodyright {
+    display: flex;
+  }
+  
+  .h3 {
+    padding: 15px;
+    font-size: 20px;
+  
+  
+  }
+  
+  .pf1 {
+    margin-top: 10px;
+    font-size: small;
+  }
+  
+  
+  .subtopic-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: none;
+  }
+  
+  
+  /*personal info container*/
+  
+  
+  .personal-heading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .info-item {
+    width: 48%;
+    /* Adjust as needed */
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+  
+  label {
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2FCACA;
+  }
+  
+  .info-value {
+    color: #333;
+  }
+  
+  /*code for term list*/
+  .terms-list {
+    margin-top: 10px;
+  }
+  
+  h4 {
+    padding: 10px;
+  }
+  
+  .term-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .term-name {
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .reply-icon {
+    color: #333;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    padding: 2px;
+  }
+  
+  
+  .search-bar1 input {
+    width: 550px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+  
+  .suggested1 {
+    width: 80%;
+    background-color: black;
+  }
+  
+  .suggested2 p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .post4 {
+    font-size: 20px;
+  }
+  
+  /*about user stat*/
+  
+  
+  /*responsiveness code*/
+  @media (min-width: 768px) {
+  
+    /* Adjustments for screens larger than 767px (e.g., tablets and desktops) */
+    .col-lg-4 {
+      width: 20%;
+    }
+  
+    .col-lg-8 {
+      width: 80%;
+    }
+  }
+  
+  /*responsiveness for about us*/
+  @media (max-width: 768px) {
+    .content {
+      width: 100%;
+    }
+  
+    .social {
+      text-align: left;
+      padding: 0 20px;
+      margin-top: 10px;
+    }
+  
+    .images-container {
+      padding: 15px;
+    }
+  }
+  
+  /*responsivenss for create new circle*/
+  @media (max-width: 768px) {
+    .search-bar1 {
+      margin-left: 10px;
+    }
+  
+    .search-bar1 input {
+      width: 250px;
+    }
+  
+    .form-control {
+      margin-top: 10px;
+    }
+  }
+  
+  
+  .infect {
+    width: 90%;
+  
+    padding: 10px;
+  }
+  
+  .footer1 {
+    margin-bottom: -20px;
+  }
+  
+  /*for the followers and profile name*/
+  @media (max-width: 767px) {
+    .details-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    /* Adjust styling for smaller screens here */
+    .fb-post1-container {
+      box-shadow: none;
+    }
+  
+    .post-title img {
+      max-width: 50px;
+      /* or any size that fits your design */
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+  
+    /* Adjust styling for smaller screens here */
+    .small-circle-image {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .info-row {
+      flex-direction: column;
+    }
+  
+    .button-container {
+      margin-top: 10px;
+    }
+  
+    .post4 p {
+      font-size: 8px;
+    }
+  
+    .post2 p {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .post2 .d-flex {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .post2 .justify-content-end {
+      justify-content: start;
+    }
+  }
+  
+  /* Style for the comment section */
+  .fb-post1 {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  /* Container for the post */
+  .fb-post1-container {
+    display: flex;
+    align-items: center;
+    /* Center content vertically */
+  }
+  
+  /* Style for the user's picture */
+  .post-title img {
+    width: 50px;
+    /* Adjust the width as needed */
+    height: 50px;
+    margin-right: 20px;
+    /* Adjust the margin as needed */
+    border-radius: 50%;
+    /* Optional: Rounded image */
+  }
+  
+  /* Style for the post title and comments */
+  .post-title ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .post-title li {
+    display: flex;
+    align-items: center;
+    /* Center content vertically */
+  }
+  
+  .post-title h5 {
+    margin: 0;
+  }
+  
+  .post-title span {
+    color: #999;
+    /* Optional: Comment timestamp color */
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+  }
+  
+  .post-title p {
+    margin: 0;
+    /* Reset margin for the paragraph */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .fb-post1-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .post-title {
+      display: flex;
+  
+    }
+  
+    .post-title img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+  }
+  
+  .jefImg {
+    margin-left: -50px;
+  }
+  
+  /* Mobile responsiveness for the header */
+  @media (max-width: 768px) {
+    .custom-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .custom-header .logo,
+    .custom-header .search-bar,
+    .custom-header .user-info,
+    .custom-header .d-flex {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    .custom-header .search-bar {
+      order: 3;
+    }
+  
+    .custom-header .user-info {
+      order: 4;
+    }
+  
+    .custom-header .d-flex {
+      order: 5;
+    }
+  
+    .img-spacing {
+      height: 40px;
+      /* Adjust as needed */
+      width: 36px;
+      /* Adjust as needed */
+    }
+  
+  
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Your tablet styles go here */
+  
+  
+  
+    .fb-p1-main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .post-title ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+  
+    .post-title h4,
+    .post-title h5 {
+      margin-bottom: 4px;
+    }
+  
+    .post-title img,
+    .post-images img {
+      max-width: 85%;
+      height: auto;
+    }
+  
+    .search-bar1 input {
+      padding: 10px;
+      margin-top: 10px;
+      width: calc(100% - 80px);
+    }
+  
+    .search-bar1 img {
+      top: 10px;
+    }
+  }
+  
+  

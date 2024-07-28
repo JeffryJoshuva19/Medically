@@ -1,0 +1,79 @@
+
+.btn-turquoise {
+    background-color: #40e0d0;
+    border-color: #40e0d0;
+    color: #ffffff;
+}
+
+.modal-footer {
+    border-bottom: 20px solid #40e0d0;
+    padding-bottom: 20px;
+}
+
+.modal-title {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-element {
+    margin-bottom: 20px;
+}
+
+.form-element input,
+.form-element select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-element input:focus,
+.form-element select:focus {
+    outline: none;
+    border-color: #40e0d0;
+}
+
+.edit-link {
+    color: #40e0d0;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.save-btn {
+    background-color: #40e0d0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #32a0b0;
+}
+
+.modal-content {
+    border-bottom: 20px solid #40e0d0;
+    padding: 20px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

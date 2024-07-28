@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Contact Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/info.css">  
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="form-container">
+             
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Edit Contact Info</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="contactForm">
+                                        <div class="form-group">
+                                            <label for="profileUrl">Profile URL:</label>
+                                            <a href="#" id="profileUrl">http://</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailUrl">Email URL:</label>
+                                            <a href="#" id="emailUrl">Email:</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneNumber">Phone Number:</label>
+                                            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneType">Phone Type:</label>
+                                            <select id="phoneType" class="form-control" name="phoneType" required>
+                                                <option value="">-Please Select-</option>
+                                                <option value="Home">Home</option>
+                                                <option value="Work">Work</option>
+                                                <option value="Mobile">Mobile</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address">Address:</label>
+                                            <textarea id="address" name="address" class="form-control"></textarea>
+                                        </div>
+                                        <div class="website-input">
+                                            <div class="form-group">
+                                                <label for="websiteUrl">Website URL:</label>
+                                                <input type="url" id="websiteUrl" name="websiteUrl" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="websiteType">Website Type:</label>
+                                                <select id="websiteType" class="form-control" name="websiteType" required>
+                                                    <option value="">-Please Select-</option>
+                                                    <option value="Personal">Personal</option>
+                                                    <option value="Business">Business</option>
+                                                    <option value="Blog">Blog</option>
+                                                    <option value="Portfolio">Portfolio</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="edit-link add-website">+ Add Website</a>
+                                        <div class="messaging-input">
+                                            <div class="form-group">
+                                                <label for="messaging">Instant Message Option:</label>
+                                                <input type="text" id="messaging" name="messaging" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="service">Service:</label>
+                                                <select id="service" class="form-control" name="service" required>
+                                                    <option value="Skype">Skype</option>
+                                                    <option value="ICQ">ICQ</option>
+                                                    <option value="Google Hangouts">Google Hangouts</option>
+                                                    <option value="QQ">QQ</option>
+                                                    <option value="Wechat">Wechat</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="edit-link add-messaging">+ Add Message Option</a>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="save-btn mt-4 btn btn-primary">Save Changes</button>
+                                    <div id="saveMessage" style="display: none;">Changes Saved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#exampleModal').modal('show');
+
+            $('#contactForm').submit(function(event) {
+                event.preventDefault();
+
+                
+                $('#saveMessage').fadeIn(); 
+                setTimeout(function() {
+                    $('#saveMessage').fadeOut(); 
+                }, 3000);
+            });
+            
+            $(".add-website").click(function(e) {
+                e.preventDefault();
+                $(".website-input").toggle();
+            });
+
+            $(".add-messaging").click(function(e) {
+                e.preventDefault();
+                $(".messaging-input").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

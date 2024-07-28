@@ -1,0 +1,70 @@
+
+
+.back_img {
+  background-image: url(/templates/static/images/signinbackground.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  opacity: 0.1;
+}
+
+.signin_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Abril_font {
+  font-family: Abril Fatface;
+}
+.Jost_font {
+  font-family: Jost;
+}
+.primary_color {
+  color: #2fcaca;
+}
+.black_color {
+  color: #000000;
+}
+.size {
+  font-size: 14px;
+  border: 1px solid #2fcaca;
+}
+.font-size {
+  font-size: 12px;
+}
+.bg {
+  background-color: #2fcaca;
+  color: white;
+  font-size: 20px;
+}
+.signin_subContainer_3 img {
+  width: 40px; 
+  height: 40px; 
+  margin: 2px; 
+}
+.forgot_pass {
+  margin-left: 40%;
+}
+.rounded-20 {
+  border-radius: 20% !important;
+}
+
+.Patient,
+.Doctor {
+  font-size: 20px;
+}
+
+.Patient img,
+.Doctor img {
+  cursor: pointer;
+}
+.Doctor img:hover,
+.Patient img:hover {
+  box-shadow: 0 0 10px 3px #2fcaca; /* Adjust the glow effect as needed */
+}
+
+.container-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+}
